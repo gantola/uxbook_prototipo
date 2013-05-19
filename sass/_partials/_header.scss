@@ -1,0 +1,11 @@
+/* @group header */
+.masthead {
+	.logo-site {
+		@include float;
+		margin: 0 $gutterwidth $gutterwidth;
+	}
+	.mod-login {
+		@include float(right);
+		width: 250px;
+	}
+}

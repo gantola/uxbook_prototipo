@@ -1,0 +1,25 @@
+/* @Typography */
+html { font-size: 62.5%; }
+body { font-family: helvetica, sans-serif; font-size: 100%; line-height: 1.5; }
+h1,h2,h3,h4,h5,h6 { font-family: arial, helvetica, sans-serif;}
+strong, b { font-weight: 700; }
+em, i { font-style: italic; }
+body,
+h4, h5, h6, p, li, td, th, dt, dd, legend, label { font-size: 12px; font-size: 1.2rem; line-height: 1.25em; /* 15 */
+}
+h1 { font-size: 18px; font-size: 1.8rem; line-height: 1.388888888888889em /* 25 */; font-weight: 700; margin-bottom: 0.2777777777777778em /* 5*/ ;
+}
+h2 { font-size: 16px; font-size: 1.6rem; line-height: 1.333333333333333 /* 20 */; margin-bottom: 0.625em; /* 10 */
+}
+h3 { font-size: 13px; font-size: 1.3rem; line-height: 1.538461538461538em /* 20 */ ; margin-bottom: 0.7692307692307692em;
+}
+h4, h5, h6 
+table,
+ol, ul, dl,
+p, li { margin-bottom: 1.5em; /* 15 */
+}
+li ul, li ol { padding-top: 0.4166666666666667em; /* 5 */ }
+td, th { padding: 0.4166666666666667em; }
+thead th { padding: 0.4166666666666667em; }
+label { margin-bottom: 1.5em; /* 15 */ }
+/* @end Typography */

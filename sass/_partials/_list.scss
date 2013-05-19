@@ -1,0 +1,113 @@
+/* @group list */
+
+.lst {
+ 	list-style-type: none;
+ 	padding: 0;
+ 	li {
+ 		display: block;
+ 		margin-left: 0;
+ 		padding: 0;   
+ 	}
+}
+.lst-tools {
+	clear: both;
+	overflow: hidden;
+	padding: 0 0 $gutterwidth * 2;
+	border: 1px solid #f00;
+}
+
+/* =item */
+.item {
+	@include pos;
+	overflow: hidden;
+	padding: 0 0 $gutterwidth * 2; margin: 0 0 $gutterwidth * 2;
+	border: 1px dotted $bordercolor;
+	border-width: 0 0 1px;
+}
+
+/* =lst-meetings */
+.lst-meetings {
+	.organizer {
+		&::before {
+			content: ">";
+			padding-right: $gutterwidth / 2;
+		}
+	}
+	.summary {
+		width: 16em;
+		@include float(right);
+	}
+	.dt--complex {
+		text-align: center;
+		@include float;
+		width: 5.3em;
+		.mouth::before {
+			content: "/";
+			padding: 0 2px;
+		}
+		.day-week {
+			display: block;
+		}
+	}
+	.title {
+		display: block;
+	}
+	.event-info {
+		clear: both;
+		margin: 0
+	}
+	.event-hour {
+		background: url(img/icons/date.png) no-repeat 0 50%;
+		padding-left: $gutterwidth * 2;
+	}
+	.map-link {
+		background: url(img/icons/sprites.png) no-repeat 0 -23px;
+		padding-left: $gutterwidth * 1.5;
+		@include float(right);
+	}
+	// controls
+	.usr-controls {
+		@include pos(absolute,2);
+		top: 0; right: 0;
+	}
+}
+.lst-add-social {
+	overflow: hidden;
+	li {
+		margin-left: $gutterwidth / 3;
+	}
+	li, a {
+		@include float;
+		width: 30px; height: 30px;
+	}
+	a {
+		background: url(img/icons/sprites.png);
+		@include hide-text;
+	}
+	.facebook { background-position: -3px 50%; }
+	.twitter { background-position: -37px 50%; }
+	.youtube { background-position: -74px 50%; }
+	.linkdein { background-position: -108px 50%; }
+	.pinterest { background-position: -142px 50%; }
+}
+/*
+.i {
+	background: url(img/icons/sprites_icons.png);
+}
+.i-map {
+	@include box-inline;
+	width: 10px; height: 15px; line-height: 15px;
+	background-position: 0 -26px;
+	padding-right: 2px
+}
+*/
+.link--rss {
+	background: url(img/icons/sprites.png) no-repeat 100% -47px;
+	@include box-inline;
+	padding-right: 20px;
+}
+.link--archive {
+	background: url(img/icons/goto.png) no-repeat 100% 50%;
+	@include box-inline;
+	padding-right: 25px;
+}

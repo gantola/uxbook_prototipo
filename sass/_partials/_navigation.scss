@@ -1,0 +1,45 @@
+/* @group navigation */
+.l-nav {
+	margin: 0 0 $gutterwidth;
+}
+.nav {
+	list-style-type: none;
+	padding: 0;
+	li {
+		display: block;
+		margin-left: 0;
+		padding: 0;   
+	}
+	ul {
+		@include zero;
+	}
+}
+.nav-inline {
+	li {
+		@include box-inline;
+	}
+}
+.mod .nav > li { margin-bottom: 1px; border-bottom: 1px solid #dedede }
+.mod .nav a { display: block; padding: 5px 5px 4px;}
+.mod .nav a:hover { background-color: #f5f5f5 }
+/* =nav-alfa */
+.nav-alfa { overflow: hidden; }
+.nav-alfa li,
+.nav-alfa a { float: left; display: block; }
+.nav-alfa li { margin: 0 5px 5px 0; }
+.nav-alfa a { text-align: center; padding: 5px; border: 1px solid #c00 }
+.nav-alfa .disable { color: #dedede; border-color: #dedede }
+
+/* =bar-utilsinfo */
+.bar-utilsinfo {
+	text-align: left;
+	.nav-utilsinfo {
+		padding: $gutterwidth / 2 $gutterwidth;
+		@extend .nav-inline;
+		li {
+			padding-right: $gutterwidth; margin-right: $gutterwidth;
+			border: 1px solid #fff;
+			border-width: 0 1px 0 0;
+		}
+	}
+}

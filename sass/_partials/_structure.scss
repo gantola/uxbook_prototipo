@@ -1,0 +1,42 @@
+/* @group layout */
+
+body {
+	text-align: center;
+}
+.pg {
+	width: 100%; 
+}
+.content, .masthead, .footer,
+.bar-utilsinfo .bar-inner {
+	text-align: left;
+	width: $maxwidth;
+	margin: 0 auto;
+}
+.masthead {
+	@include pos(relative,2);
+	padding: $gutterwidth * 2 0;
+}
+.content {
+	@include pos(relative,1);
+	@include group;
+	clear: both;
+	padding: $gutterwidth * 1.4 0;
+}
+.contentinfo {
+	clear: both;
+	padding: $gutterwidth / 1.5;
+}
+
+/* =grid */
+.col { @include float; margin-left: $gutterwidth * 2; }
+.col:first-child { margin-left: 0 }
+.colgroup-3 {
+	.col-a,
+	.col-c {
+		width: 312px
+	}
+	.col-b {
+		width: 316px;
+		@include float;
+	}
+}

@@ -1,0 +1,26 @@
+/* @group links */
+
+a,
+a:visited {
+	color: $linkcolor;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: $linkcolorhover;
+	text-decoration: underline;
+}
+a:active {
+	color: $linkcoloractive;
+	text-decoration: none;
+}
+
+.bar-utilsinfo {
+	background-color: #000; color: #fff;
+	a {
+		color: #fff;
+		&:hover {
+			color: $linkcolorhover;
+		}
+	}
+}

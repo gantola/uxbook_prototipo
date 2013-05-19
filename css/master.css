@@ -1,0 +1,78 @@
+/*
+	Reset
+	Core
+	Typo
+	Link
+	Structure
+	-Colours
+	-Link
+	-Header
+	Navigation
+	-Footer
+	Form
+*/
+
+
+@import url(import/reset.css);
+@import url(import/core.css);
+@import url(import/typo.css);
+@import url(import/link.css);
+
+@import url(import/structure.css);
+@import url(import/navigation.css);
+@import url(import/form.css);
+@import url(import/grid.css);
+
+/* @Typo */
+.msg, .label-field label, legend {
+	font-family: Georgia, serif;
+	font-style: italic; font-size: 1.1em;
+}
+legend,
+.event .dt span { font-weight: 700 }
+/* @Nagigation */
+.page, header[role="banner"], footer[role="contentinfo"]{
+	border: 5px solid #000;
+	padding: 15px; margin: 0 0 15px;
+}
+.form-block,.pagination { border: 1px solid #000; padding: 15px; margin: 0 0 15px; }
+.page, header[role="banner"], footer[role="contentinfo"],
+.form-block,
+.msg,
+.pagination { background-color: rgba(0,0,0,0.1);
+}
+.index .main,
+.col-ab { overflow: hidden; }
+.col-a { float: left; width: 65% }
+.col-b { float: right; width: 30% }
+
+.sub .mod { padding: 2%; margin: 0 0 15px; border: 1px dashed #000 }
+
+.index .lst-block {
+	float: left;
+	width: 30%;
+	margin-right: 3%
+}
+.lst-btn li { display: inline-block; margin-right: 5px; }
+.lst > li { overflow: hidden; }
+.btn { border: 1px solid #000; }
+.item { overflow: hidden; margin: 0 0 15px; padding: 0 0 5px; border-bottom: 5px solid #dedede }
+/* =nav, lst, opt */
+.nav, .lst, .opt,
+.nav li, .lst li .opt li {
+	list-style: none; margin-left: 0; padding-left: 0
+}
+.mod .nav > li { margin-bottom: 1px; border-bottom: 1px solid #dedede }
+.mod .nav a { display: block; padding: 5px 5px 4px;}
+.mod .nav a:hover { background-color: #f5f5f5 }
+/* =nav-alfa */
+.nav-alfa { overflow: hidden; }
+.nav-alfa li,
+.nav-alfa a { float: left; display: block; }
+.nav-alfa li { margin: 0 5px 5px 0; }
+.nav-alfa a { text-align: center; padding: 5px; border: 1px solid #c00 }
+.nav-alfa .disable { color: #dedede; border-color: #dedede }
+/* =msg */
+.msg {
+	padding: 15px; border: 1px dashed #dedede; margin: 0 0 15px; }
+.msg * { margin: 0; padding: 0; }

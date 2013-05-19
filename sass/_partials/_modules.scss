@@ -1,0 +1,48 @@
+/* @group Modules */
+
+/* =mod */
+.mod {
+	margin: 0 0 $gutterwidth;
+}
+.mod-hd {
+	margin: 0 0 $gutterwidth / 3;
+}
+
+.mod-bd {
+	clear: both;
+}
+
+/* @sub module */
+.sub .mod {
+	clear: both;
+}
+
+/* =mod-userinfo */
+.mod-userinfo {
+	display: none;
+}
+.mod-events,
+.mod-books,
+.mod-meetings {
+	background-color: #fff;
+	@include box-shadow;
+	.mod-bd {
+		padding: 0 $gutterwidth;
+	}
+	.mod-hd {
+		padding: $gutterwidth 0 0;
+	}
+	.mod-title {
+		@include pos;
+		padding: $gutterwidth;
+		i {
+			background-image: url(img/bk/sprites_hd.png);
+			background-repeat: no-repeat;
+			width: 62px; height: 61px;
+			@include pos(absolute,2);
+			bottom: 0; right: $gutterwidth;
+			display: block;
+			margin: 0 0 0;
+		}
+	}
+}

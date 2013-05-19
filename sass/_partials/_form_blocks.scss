@@ -1,0 +1,47 @@
+/* =form */
+.btn {
+	@include font-size(12);
+	line-height: 1.5;
+	text-transform: lowercase;
+}
+.btn-goto-register {
+	@include font-size(14);
+}
+
+/* =login-form */
+.login-form {
+	.title {
+		@include hide-text;
+	}
+	input[type="text"],
+	input[type="password"] {
+		width: 100%;
+	}
+}
+/* =btn */
+.btn {
+	background-color: #fff; color: #000;
+	padding: /*$gutterwidth / 2*/ 0 $gutterwidth * 2;
+	@include box-shadow;
+	@include border-radius(20px);
+}
+/* =mod-login */
+.btn-goto-register {
+	background-color: #ffdf6c; color: #000;
+	@include box-shadow;
+	@include border-radius(0);
+}
+.btn-goto-register {
+	@include pos;
+	text-align: left;
+	padding: 0;
+	width: 100%;
+	.btn-text {
+		display: block;
+		padding: $gutterwidth $gutterwidth $gutterwidth $gutterwidth * 2;
+	}
+	.btn-text::before {
+		content: ">>";
+		@include float(right);
+	}
+}

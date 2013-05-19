@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import "_partials/_config.scss";
+@import "_partials/_mixins.scss";
+@import "_partials/_reset.scss";
+
+@import "_partials/_core.scss";
+@import "_partials/_typo.scss";
+@import "_partials/_links.scss";
+@import "_partials/_structure.scss";
+@import "_partials/_header.scss";
+@import "_partials/_navigation.scss";
+@import "_partials/_list.scss";
+@import "_partials/_modules.scss";
+@import "_partials/_footer.scss";
+@import "_partials/_colors.scss";
+
+@import "_partials/_form.scss";
+@import "_partials/_form_blocks.scss";
+
+/* @Typo */
+.msg, .label-field label, legend {
+	font-family: Georgia, serif;
+	font-style: italic; font-size: 1.1em;
+}
+legend,
+.event .dt span { font-weight: 700 }
+/* @Nagigation */
+
+.pagination { border: 1px solid #000; padding: 15px; margin: 0 0 15px; }
+
+.msg,
+.pagination { background-color: rgba(0,0,0,0.1);
+}
+.index .main,
+.col-ab { overflow: hidden; }
+.col-a { float: left; width: 65% }
+.col-b { float: right; width: 30% }
+
+.sub .mod { padding: 2%; margin: 0 0 15px; border: 1px dashed #000 }
+
+.index .lst-block {
+	float: left;
+	width: 30%;
+	margin-right: 3%
+}
+.lst-btn li { display: inline-block; margin-right: 5px; }
+.lst > li { overflow: hidden; }
+/* =nav, lst, opt */
+/* =msg */
+.msg {
+	padding: 15px; border: 1px dashed #dedede; margin: 0 0 15px; }
+.msg * { margin: 0; padding: 0; }

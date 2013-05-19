@@ -1,0 +1,50 @@
+/* @group colours */
+
+/*
+
+TITOLI SEZIONI
+appuntamenti: #7c00ab
+libri: #a88000
+eventi: #008e9c
+altro: #666666
+
+*/
+body {
+	color: $bodycolor;
+	background: $basefontbackgroundcolor url(img/bk/bk_body.png) repeat-x 0 30px;
+}
+/* =lst */
+.lst-meetings .organizer {
+	color: $alttextcolor;
+}
+
+/* =mod */
+.mod-meetings {
+	.mod-title {
+		background: url(img/bk/bk_meetings.jpg) repeat 0 0;
+		color: #7c00ab;
+		i {
+			background-position: 0 0;
+		}
+	}
+}
+.mod-events {
+	.mod-title {
+		background: url(img/bk/bk_events.jpg) repeat 0 0;
+		color: #008e9c;
+		i {
+			background-position: 0 -170px;
+		}
+	}
+}
+.mod-books {
+	.mod-title {
+		background: url(img/bk/bk_books.jpg) repeat 0 0;
+		color: #a88000;
+		i {
+			background-position: 0 -87px;
+		}
+	}
+}
+/* =form */
+
