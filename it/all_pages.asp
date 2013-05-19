@@ -157,7 +157,7 @@
 					<div class="figure">
 						<img src="..images/copertina.jpg" alt="" class="photo">
 					</div><!-- /figure -->
-					<div class="bd">
+					<div class="media-text">
 						<h1 class="book-title">Titolo libro</h1>
 						<p class="book-author">di <em>Nome autore</em></p>
 						<div class="book-meta">
@@ -1054,10 +1054,10 @@
 			<ol class="lst lst-archive lst-books">
 				<li class="item book">
 				<div class="media">	
-					<div class="figure thumb">
+					<div class="media-fig">
 						<img src="..images/thumb_libro.jpg" alt="" class="photo">
 					</div>
-					<div class="bd">
+					<div class="media-text">
 						<div class="book-summary">
 						<h1 class="item-title book-title"><label><a href="#libro" class="item-url">Titolo libro</a></label></h1>
 						<p class="book-author">di <em>Nome autore</em></p>
